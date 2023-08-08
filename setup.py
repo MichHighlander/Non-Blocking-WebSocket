@@ -4,7 +4,8 @@ setup(
     version='1.0.0',
     author='Mich Arens',
     description='Non Blocking WebSocket',
-    packages=find_packages(),  # Automatically find all packages in the project
+    packages=find_packages(where='src'),  # Specify the 'src' directory
+    package_dir={'': 'src'},              # Specify that packages are in 'src'
     install_requires=[
         'websocket-client>=1.6.1'
         ], # List dependencies here
