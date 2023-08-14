@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 setup(
     name='non_blocking_ws',
-    version='1.0.0',
+    version='1.0.1',
     author='Mich Arens',
     description='Non Blocking WebSocket',
     packages=find_packages(where='src'),  # Specify the 'src' directory

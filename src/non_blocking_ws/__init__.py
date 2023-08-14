@@ -28,10 +28,8 @@ class NonBlockingWS:
                                         on_error=self.__on_error,
                                         on_message=self.__on_message)
 
-            self.ws.on_open = lambda ws: self.__start_publish_thread(ws)
-
             self.ws.run_forever()
-            print("WebSocket connection closed. 2")
+            print("WebSocket connection closed. 3")
         except KeyboardInterrupt:
             self.ws.close()
             print("WebSocket connection closed due to keyboard interrupt.")
